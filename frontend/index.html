@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI primera WEB</title>
+
+
+
+    <!-- CSS STYLES -->
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- prueba -->
+    <h1>Hola Mundo</h1>
+    <h2>hola mundo</h2>
+    <h3>hola mundo</h3>
+    <h4>hola mundo</h4>
+    <h5>hola mundo</h5>
+    <h6>hola mundo</h6>
+
+    <p>esta etiqueta es de tipo parrafo</p>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Arroz</li>
+        <li>Carne</li>
+        <li>Cafe</li>
+    </ol>
+
+    <h2>Lista desordenada</h2>
+
+    <ul>
+        <li>Cafe</li>
+        <li>Carne</li>
+        <li>Arroz</li>
+
+    </ul>
+
+
+    <!-- 14/04/2026 Enlaces a otras páginas -->
+
+    <a href="https://youtube.com" target="_blank">Ir a YouTube</a>
+    <a href="https://pruebaurl.github.io">HV del Profe</a>
+    <br>
+    <br>
+    <img class="miImagen" src="../imagenes/perrito.jpg" alt="Perrito reportero">
+    <br>
+    <br>
+
+    <!-- 15/04/2026 -->
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Lugar Nacimiento</th>
+        </tr>
+        <tr>
+            <td>marftin castaño</td>
+            <td>22</td>
+            <td>Neira</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- FROMULARIO INGRESO -->
+
+    <h3>FORMULARIO INGRESO</h3>
+    <form class="areaFormulario" action="">
+        <label for="">Nombre:</label>
+        <input type="text">
+        <label for="">Contraseña:</label>
+        <input type="password">
+        <label for="">Fecha Nacimiento:</label>
+        <input type="date">
+        <label for="">Celular</label>
+        <input type="number">
+        <button>enviar</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+
+    <script>
+        import Swal from 'sweetalert2/dist/sweetalert2.js'
+        import 'sweetalert2/src/sweetalert2.scss'
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+        })
+    </script>
+
+    <button class="btn btn-primary">
+        enviar
+    </button>
+</body>
+
+</html>

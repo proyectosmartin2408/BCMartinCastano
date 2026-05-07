@@ -1,0 +1,21 @@
+body {
+   background-color: #c1c1c1;
+   justify-content: center;
+   justify-items: center;
+}
+
+.barraMenu {
+    background-color: blue !important;
+    width: 100% !important;
+
+}
+
+.areaFormulario {
+    width: 50% !important;
+}
+
+.carrusel {
+    
+    width: 300px !important;
+    height: 200px !important;
+}

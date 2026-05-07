@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Inteligente</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(163, 163, 163);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;           
+        }
+
+        #areaTitulo {
+            position: fixed;
+            z-index: 1000;
+            background-color: #090138;
+            border-radius: 12px;
+            padding: 10px;
+            color: #ffffff;
+        }
+
+        #tituloChatbot {
+            text-align: center;
+            margin: 6px;
+        }
+
+        #chatbot {
+            margin-top: 15vh;
+            background: rgb(201, 201, 201);
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0, 4px, 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #chatForm {
+            display: flex;
+            justify-content: center;
+        }
+
+        #messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 15px;
+        }
+
+        .msg {
+            margin: 4px 0;
+            padding: 3px;
+        }
+
+        .user {
+            text-align: right;
+            color: rgb(0, 0, 0);
+            background-color: rgb(74, 255, 104);
+        }
+
+        .bot {
+            text-align: left;
+            color: rgb(0, 0, 0);
+            background-color: rgb(79, 82, 255);
+        }
+
+        input[type="text"] {
+           width: 90%;
+           padding: 5px;
+           border: 1px solid #ddd;
+           border-radius: 10px;
+           outline: none;
+           justify-content: center;
+           font-size: 18px;
+           font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="areaTitulo">
+        <h2 id="tituloChatbot">🤖 CHATBOT</h2>
+    </div>
+    <div id="chatbot">
+        <div id="messages"></div>
+        <form id="chatForm">
+            <input type="text" id="userInput" placeholder="Escriba su Pregunta" 
+                autocomplete="off">
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("chatForm");
+        const messages = document.getElementById("messages");
+        const input = document.getElementById("userInput");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const text = input.value.trim();
+            if(!text) return;
+            messages.innerHTML += `<div class="msg user">Tú: ${text}</div>`
+            input.value = "";
+            const response = await fetch("/chat", {
+                method:"POST",
+                headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                body:`message=${encodeURIComponent(text)}`
+            });
+            const data = await response.json();        
+            messages.innerHTML += `<div class="msg bot">Bot: ${data.response}</div>`;
+            messages.scrollTop = messages.scrollHeight;
+
+        });
+    </script>
+
+</body>
+
+</html>

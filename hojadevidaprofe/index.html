@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoja de Vida • Julián David Buitrago</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Contenido exportable a PDF -->
+    <main id="pdf-content" class="container-lg my-4">
+      <div class="row shadow-lg rounded-4 overflow-hidden resume-wrapper">
+        <!-- Lado Izquierdo -->
+        <aside class="col-md-4 text-white p-4 left-col">
+          <header class="text-center mb-4">
+            <img
+              src="img/image.png"
+              class="img-fluid rounded-circle border border-4 border-white mb-3 avatar"
+              alt="Foto de perfil"
+            />
+            <h1 class="fw-bold mb-1 text-wrap text-uppercase name">Julián David Buitrago</h1>
+            <h2 class="h6 text-light-50">Desarrollador de Software / Docente</h2>
+          </header>
+
+          <!-- Contacto -->
+          <section class="mb-4">
+            <h5 class="fw-bold section-title"><i class="fa-solid fa-address-card me-2"></i>Contacto</h5>
+            <ul class="list-unstyled small m-0">
+              <li class="mb-2">
+                <a href="https://wa.me/573136850577?text=Hola%20Juli%C3%A1n%2C%20me%20gustar%C3%ADa%20contactarte"
+                   class="text-white " target="_blank">
+                  <i class="fa-brands fa-whatsapp me-2"></i> +57 313 685 0577
+                </a>
+              </li>
+              <li class="mb-2"><a href="mailto:julian.buitrago@ucaldas.edu.co" class="text-white" target="_blank"><i class="fa-solid fa-envelope me-2"></i> julian.buitrago@ucaldas.edu.co</a></li>
+              <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> Manizales, Caldas (CO)</li>
+              <li class="mb-2">
+                <a href="https://github.com/JulianDavidBuitrago" target="_blank" class="text-white ">
+                  <i class="fab fa-github me-2"></i> github.com/JulianDavidBuitrago
+                </a>
+              </li>
+              <!-- LinkedIn eliminado a solicitud del usuario -->
+            </ul>
+          </section>
+
+          <!-- Tech Stack (chips) -->
+          <section class="mb-4">
+            <h5 class="fw-bold section-title"><i class="fa-solid fa-code me-2"></i>Tech Stack</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="chip">.NET Core</span>
+              <span class="chip">.NET Framework</span>
+              <span class="chip">C#</span>
+              <span class="chip">ASP.NET Web API</span>
+              <span class="chip">SQL Server</span>
+              <span class="chip">Entity Framework</span>
+              <span class="chip">Angular</span>
+              <span class="chip">Laravel</span>
+              <span class="chip">HTML/CSS</span>
+              <span class="chip">Git</span>
+            </div>
+          </section>
+
+          <!-- Habilidades (barras) -->
+          <section class="mb-4">
+            <h5 class="fw-bold section-title"><i class="fa-solid fa-gauge-high me-2"></i>Habilidades</h5>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between"><span>Back‑end (.NET/C#)</span><span>90%</span></div>
+              <div class="progress" style="height: 8px"><div class="progress-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between"><span>Frontend (Angular/HTML/CSS)</span><span>80%</span></div>
+              <div class="progress" style="height: 8px"><div class="progress-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between"><span>Bases de datos (SQL Server)</span><span>85%</span></div>
+              <div class="progress" style="height: 8px"><div class="progress-bar" style="width: 85%"></div></div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between"><span>Docencia / Mentoría</span><span>90%</span></div>
+              <div class="progress" style="height: 8px"><div class="progress-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between"><span>Frontend (Laravel)</span><span>40%</span></div>
+              <div class="progress" style="height: 8px"><div class="progress-bar" style="width: 40%"></div></div>
+            </div>
+          </section>
+
+          <!-- Educación -->
+          <section class="mb-2">
+            <h5 class="fw-bold section-title"><i class="fa-solid fa-graduation-cap me-2"></i>Formación</h5>
+            <ul class="list-unstyled small m-0">
+              <li class="mb-2">
+                <strong>Aspirante a Magister en Inteligencia Artificial</strong><br/>
+                Univerisdad de la RIOJA (2025–Actualidad)
+              </li>
+              <li class="mb-2">
+                <strong>Ingeniería en Informática</strong><br/>
+                Universidad de Caldas (2017–2021)
+              </li>
+              <li class="mb-2">
+                <strong>Docencia y Didáctica Universitaria</strong><br/>
+                Politécnico Superior de Colombia (2022)
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <!-- Lado Derecho -->
+        <section class="col-md-8 p-4 bg-light right-col">
+          <!-- Sobre mí -->
+          <section class="mb-4">
+            <h4 class="fw-bold text-primary mb-3"><i class="fa-solid fa-user me-2"></i>Perfil</h4>
+            <p class="mb-0">
+              Ingeniero en Informática con experiencia en desarrollo back‑end sobre el ecosistema .NET,
+              diseño e integración de APIs, y soporte a sistemas monolíticos de misión crítica.
+              Complemento el desarrollo con administración de bases de datos, buenas prácticas,
+              y un alto interés por la docencia y la transferencia de conocimiento.
+            </p>
+          </section>
+
+          <!-- Experiencia -->
+          <section class="mb-4">
+            <h4 class="fw-bold text-primary mb-3"><i class="fa-solid fa-briefcase me-2"></i>Experiencia Profesional</h4>
+
+            
+            <!-- Universidad de Caldas -->
+            <article class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                  <div>
+                    <h5 class="card-title fw-bold mb-1">Docente Catedrático</h5>
+                    <h6 class="text-primary m-0">Universidad de Caldas</h6>
+                  </div>
+                  <div class="text-muted small">Nov. 2022 – Actualidad • Manizales</div>
+                </div>
+                <ul class="mt-3 mb-0">
+                  <li>Asignaturas: Fundamentos de Programación, POO, Programación Web (1 y 2), Bases de Datos (1), Ingeniería de Requisitos e Introducción a la Ingeniería.</li>
+                  <li>Acompañamiento a prácticas profesionales y Bootcamps Talento Tech.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- People Contact -->
+            <article class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                  <div>
+                    <h5 class="card-title fw-bold mb-1">Desarrollador Senior .NET</h5>
+                    <h6 class="text-primary m-0">People Contact S.A.S</h6>
+                  </div>
+                  <div class="text-muted small">Oct. 2022 – Mar. 2024 • Manizales</div>
+                </div>
+                <ul class="mt-3 mb-0">
+                  <li>Desarrollo de <strong>APIs REST</strong> con <strong>.NET Core</strong> y <strong>.NET Framework</strong> (C#), aplicando principios SOLID y patrones de arquitectura.</li>
+                  <li>Soporte, mantenimiento y modernización de <strong>sistemas monolíticos</strong> de alto uso, creando gradualmente capas de servicios y endpoints para desacoplar funcionalidades.</li>
+                  <li>Integración de back‑end con frontends en <strong>Angular</strong> y aplicaciones en <strong>Laravel</strong>; consumo de servicios y autenticación (JWT/OAuth).</li>
+                  <li>Administración y optimización de <strong>SQL Server</strong>: consultas T‑SQL, vistas, índices y procedimientos almacenados.</li>
+                  <li>Prácticas de calidad: control de versiones (Git), code reviews y documentación técnica.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Alcaldía de Manizales -->
+            <article class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                  <div>
+                    <h5 class="card-title fw-bold mb-1">Ingeniero de Soporte</h5>
+                    <h6 class="text-primary m-0">Alcaldía de Manizales</h6>
+                  </div>
+                  <div class="text-muted small">Oct. 2024 – Dic. 2024 • Manizales</div>
+                </div>
+                <ul class="mt-3 mb-0">
+                  <li>Desarrollo de aplicativo de consulta <strong>PAIWEB</strong> para trazabilidad de vacunados.</li>
+                  <li>Soporte y actualizaciones a la página <strong>SICAPS</strong>, con entrega de documentación técnica.</li>
+                </ul>
+              </div>
+            </article>
+
+
+            <!-- Softgreen -->
+            <article class="card border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                  <div>
+                    <h5 class="card-title fw-bold mb-1">Desarrollador</h5>
+                    <h6 class="text-primary m-0">Softgreen Constructores de Software</h6>
+                  </div>
+                  <div class="text-muted small">Feb. 2020 – Abr. 2021 • Manizales</div>
+                </div>
+                <ul class="mt-3 mb-0">
+                  <li>Desarrollo de sitios y aplicaciones con <strong>Laravel</strong>.</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <!-- Botón Descargar -->
+        </section>
+      </div>
+    </main>
+    
+    <div class="text-center my-3">
+      <button id="downloadBtn" onclick="downloadPDF()" class="btn btn-outline-primary px-4">
+        <i class="fa-solid fa-file-arrow-down me-2"></i>Descargar en PDF
+      </button>
+    </div>
+    <!-- Librerías -->
+    <script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

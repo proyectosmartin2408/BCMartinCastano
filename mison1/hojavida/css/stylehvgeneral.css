@@ -1,0 +1,19 @@
+.colizquierda {
+    background-color: #15043c !important;
+}
+
+.colderecha {
+    background-color: #e3e3e3 !important;
+}
+
+.textoContacto:hover {
+    background-color: #0016a3;
+}
+
+.progress {
+    background-color: #cccccc33 !important;
+}
+
+.text-primary {
+    color: #15043c !important;
+}

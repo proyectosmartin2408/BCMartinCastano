@@ -1,0 +1,51 @@
+/* Tipografía y base */
+* { box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background: #f5f7fb; color: #1f2a37; }
+h1,h2,h3,h4,h5 { letter-spacing: .2px; }
+
+/* Layout */
+.resume-wrapper { background: #fff; }
+.left-col {
+  background: linear-gradient(180deg, #223a5e 0%, #2c3e50 60%, #34495e 100%);
+}
+.right-col { background-color: #fbfbfc; }
+
+/* Avatar */
+.avatar { width: 140px; height: 140px; object-fit: cover; }
+
+/* Titulares */
+.section-title { color: #e8eef7; text-transform: uppercase; letter-spacing: .8px; }
+.name { font-size: 1.35rem; }
+.text-light-50 { color: rgba(255,255,255,.8); }
+.text-primary {  color: #3498db !important;}
+/* Chips */
+.chip {
+  display: inline-block;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1;
+  transition: transform .2s ease, background .2s ease;
+}
+.chip:hover { transform: translateY(-1px); background: rgba(255,255,255,.18); }
+
+/* Cards & hover */
+.card { transition: transform .25s ease, box-shadow .25s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,.08); }
+
+/* Progress bars */
+.progress { background-color: rgba(255,255,255,.22); }
+.progress .progress-bar { background-color: #ffffff; }
+
+/* Botón PDF */
+#downloadBtn { font-size: 0.95rem; border-width: 2px; }
+
+/* Impresión (PDF) */
+@media print {
+  #downloadBtn { display: none !important; }
+  body { background: #fff; }
+  .resume-wrapper { box-shadow: none !important; }
+}
